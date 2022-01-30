@@ -45,7 +45,7 @@ mod rendering;
 mod voxel;
 
 // world size in chunks
-const WORLD_SIZE_XZ: i32 = 6;
+const WORLD_SIZE_XZ: i32 = 4;
 const WORLD_SIZE_Y: i32 = 9;
 
 fn main() {
