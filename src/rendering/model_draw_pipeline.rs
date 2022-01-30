@@ -291,6 +291,7 @@ impl EntityRenderCommand for DrawMeshInstanced {
 }
 
 // can work on doing latter, on the user side there is no different
+// could try to order the instancing so you could use more then one instance at a time in the draw loop
 // get all material and mesh combos as keys and merge all instances together to reduce number of gpu state changes
 // create a new entity with the key and value that will be rendered
 fn merge_entitys<M: SpecializedMaterial>(
