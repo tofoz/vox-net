@@ -1,0 +1,36 @@
+[package]
+name = "vox-net"
+version = "0.1.0"
+edition = "2021"
+
+
+[workspace]
+members = ["./crates/*"]
+
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
+
+
+[dependencies]
+prism_math = { path = "crates/prism_math" }
+bevy = { version = "0.6.0" }
+bevy_egui = "0.10.1"
+
+bincode = "1.3.3"
+serde = { version = "1.0.133", features = ["derive"] }
+bytemuck = { version = "1.7.0", features = ["derive"] }
+noise = "0.7.0"
+rayon = "1.5.1"
+
+anyhow = "1.0.4"
+rand = "0.8.0"
+ron = "0.7.0"
+thiserror = "1.0.30"
+
+packed_struct = "0.10.0"
+
+bevy_fly_camera = "0.8.0"
