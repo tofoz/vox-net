@@ -1,5 +1,5 @@
 # vox-net
-voxel terrain prototype useing bevy
+voxel block terrain prototype using bevy.
 
 ---
 
